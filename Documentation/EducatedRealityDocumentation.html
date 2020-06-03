@@ -1,0 +1,446 @@
+<!DOCTYPE html><html><head>
+      <title>EducatedRealityDocumentation</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Alexandru\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.10\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="educated-reality-documentation">Educated Reality Documentation</h1>
+
+<h2 class="mume-header" id="description">Description</h2>
+
+<p>This is a documentation for describing the functionality added in the educated reality project</p>
+<h2 class="mume-header" id="building">Building</h2>
+
+<p>To build the application the following steps have to be performed:</p>
+<ul>
+<li>File -&gt; Build Settings -&gt; Select the platform (Windows/Android)</li>
+</ul>
+<h3 class="mume-header" id="for-oculus-rift-swindows">For Oculus Rift S(Windows)</h3>
+
+<ul>
+<li>
+<p>Click player settings<br>
+<img src="Pictures/WindowsScreen.jpg" alt="alt text"></p>
+</li>
+<li>
+<p>Make sure the Company name + product name + version are correct and support (they should be in the <code>Company.Name.Version</code>)<br>
+<img src="Pictures/PlayerSettings.jpg" alt="alt text"></p>
+</li>
+<li>
+<p>Make sure the Configuration/Scripting Backend is set to mono<br>
+<img src="Pictures/Mono.jpg" alt="alt text"></p>
+</li>
+<li>
+<p>Go back and click build<br>
+<img src="Pictures/Build.jpg" alt="alt text"></p>
+</li>
+<li>
+<p>The result should contain an exe, when you want to deliver the application you should zip the whole folder and unzip it on the client.<br>
+<img src="Pictures/Result.jpg" alt="alt text"></p>
+</li>
+</ul>
+<h3 class="mume-header" id="for-oculus-questgoandroid">For Oculus Quest/Go(Android)</h3>
+
+<ul>
+<li>
+<p>Click player settings<br>
+<img src="Pictures/WindowsScreen.jpg" alt="alt text"></p>
+</li>
+<li>
+<p>Click Android and click SwithPlatform (It will take some time to load and prepare everything)<br>
+<img src="Pictures/Loaded.jpg" alt="alt text"><br>
+<img src="Pictures/Android.jpg" alt="alt text"></p>
+</li>
+<li>
+<p>Click Build<br>
+<img src="Pictures/AndroidBuild.jpg" alt="alt text"></p>
+</li>
+<li>
+<p>The result should be an <strong>apk</strong> you can install on quest/go.<br>
+<img src="Pictures/ResultAndroid.jpg" alt="alt text"></p>
+</li>
+</ul>
+<h2 class="mume-header" id="scripts">Scripts</h2>
+
+<p>To use the network functionality Photon folder was added.</p>
+<p>All the custom scripts are added in the Assets/Scripts folder</p>
+<ul>
+<li>TalkingPoint</li>
+<li>NextButton</li>
+<li>RetryButton</li>
+<li>SharedObject</li>
+<li>NetworkPlayer</li>
+</ul>
+<p><img src="Pictures/Scripts.jpg" alt="alt text"></p>
+<h3 class="mume-header" id="talkingpoint">TalkingPoint</h3>
+
+<p>This script is used for identifying a TalkingPoint and should be present on each plane you want to display in the machine. Each Talking point has to contain a PhotonTransformView and PhotonView component and has to have the meshRenderer component turned of instead of the first one like in the following picture:</p>
+<p><img src="Pictures/TalkingPoint.jpg" alt="alt text"></p>
+<h3 class="mume-header" id="nextbutton">NextButton</h3>
+
+<p>This script is used to go through all the talking points. It has a list of talking points as input. When the button is pressed one item from the list will have the MeshRenderer component enabled while all the others disabled.</p>
+<p><img src="Pictures/NextButton.jpg" alt="alt text"></p>
+<h3 class="mume-header" id="retrybutton">RetryButton</h3>
+
+<p>This script is used to reset the initial position of all the objects from the Card list. It takes as input a list of objects, saves their initial position. When pressed all the items from list will be moved to the initial position.</p>
+<p><img src="Pictures/Retry.jpg" alt="alt text"></p>
+<h3 class="mume-header" id="sharedobject">SharedObject</h3>
+
+<p>This script is for transfering the position of an object through the network. It should be present on all the object you want to share for all the members of the network.<br>
+The object should look like this.</p>
+<p><img src="Pictures/SharedObject.jpg" alt="alt text"></p>
+<h3 class="mume-header" id="networkplayer">NetworkPlayer</h3>
+
+<p>The network player is a prefab locate at:<br>
+<strong>Assets\Photon\PhotonVoice\Demos\DemoVoiceMinimal\Resources</strong></p>
+<p>This prefab is created when the player connects. Once the player connects this prefab is created and the scripts tells the object to link itself to the VRRig component (to the head). In case you want to change the avatar just modify the prefab to use a head instead of the red cube.</p>
+<p><img src="Pictures/NetworkPlayer.jpg" alt="alt text"></p>
+<h3 class="mume-header" id="voice-connection-and-recorder">Voice Connection and Recorder</h3>
+
+<p>This component is located in the scene and is responasible for connecting to the network and instatiating the network player.</p>
+<p><img src="Pictures/Connect.jpg" alt="alt text"></p>
+<h1 class="mume-header" id="6032020">6/03/2020</h1>
+
+<h2 class="mume-header" id="additional-scripts">Additional Scripts</h2>
+
+<p>More scripts were added :</p>
+<ul>
+<li>AnimalSelection (Script used for getting a random animal name from a list)</li>
+<li>FixedTeleportation (Script that overrides the teleportation area so no chage has to be made when starting the project again)</li>
+<li>InteractionButton (Script that has to be on each button that we want to interact with)</li>
+<li>MovieController (Script that is used for controlling the video player -&gt; pause/stop/next)</li>
+<li>MoviesHolder (Script that holds all the movies somebody can go through)</li>
+<li>ReticleScript (Script attached to the reticle that makes sure the size is correct)</li>
+</ul>
+<p><img src="Pictures/NewScripts.jpg" alt="alt text"></p>
+<h2 class="mume-header" id="animal-machine">Animal Machine</h2>
+
+<p><img src="Pictures/AnimalMachine.jpg" alt="alt text"></p>
+<p>The animal machine contains 2 canvases</p>
+<ol>
+<li>holding the UI text that will display the animal name</li>
+<li>holding the button the customer can press to change the name</li>
+</ol>
+<p>For the ray to interact with the button there has to be a rigid body on the button as well as a collider.</p>
+<p>On the button there are 2 scripts:</p>
+<ol>
+<li>InteractionButton (has to be on each button)</li>
+<li>AnimalSelectionButton</li>
+</ol>
+<p>The animal selection button has a list of words that can be displayed on the machine. You can add as many animal names as you like.<br>
+In order for the script to work the Text field on the Animal Selection Button has to contain the text ui element from the AnimalNameCanvas (That is the text used to display the animal name).</p>
+<p>This machines is synced through the network by using punRPC procedures which are like a signal that is sent to all the clients. When the button is pressed a signal is sent to every other animal machine for all the clients with the current word index and everybody updates their machine.</p>
+<h2 class="mume-header" id="movies-holder">Movies Holder</h2>
+
+<p><img src="Pictures/MoviesHolder.jpg" alt="alt text"></p>
+<p>On the video player component a script called MoviesHolder was added so you can add a list of movies somebody can go through.<br>
+In our example we have videos in Asset folder and we dragged and droped them on the Movies field.<br>
+The VideoPlayer field has to contain the video player component from the object and the current movie index is just informative(do not change that it should always be 0).</p>
+<p>In order to interact with the video player there are 3 canvases each holding a button added</p>
+<ol>
+<li>NextMovie</li>
+<li>StopStartMovie</li>
+<li>BackMovie</li>
+</ol>
+<p><img src="Pictures/MovieController.jpg" alt="alt text"></p>
+<p>Each button has a Movie Controller script attached that holds logic for interacting with the video player. Each button has it&apos;s own operation that executes when you click on it and you can see it on the OnClick event list.<br>
+NOTE: For the StartStop button we added A stop and a start image so when you click on it the image changes accordingly, those are not neccesary for other buttons.</p>
+<p>The buttons work the same as other interaction buttons, having a rigid body, a collider and the interaction button script.</p>
+<p><strong>In order for the reticle to change size when you hover over a button, the name of the button has to contain &quot;Button&quot; in it.</strong></p>
+<p>The network part is the same as the animal button where every time you click on a movie button it sends a signal to all the other clients connected with the current movie index. Each client updates accordingly on his side the movie that is playing.</p>
+<h2 class="mume-header" id="connection-scene">Connection scene</h2>
+
+<ul>
+<li>A new scene was added in order for a better experience in case of a disconnect. The scene contains a simple ui canvas with multiple ui elements and a vr rig that can interact with them. This will later be transformed intro a lobby.</li>
+</ul>
+<p><img src="Pictures/NewScene.jpg" alt="alt text"><br>
+Those produce no effect on the application unless for android build. When you build the android version make sure to remove the LevelSelection (isLoading) lines before, (you can remove them is they are (not loaded), if they are is loading, close unity and open again, or just open the LevelSelection scene)</p>
+<ul>
+<li>When somebody presses the connect button the next scene is already loaded asyncronously but this produces some issues in the editor mode apparently</li>
+</ul>
+<p><img src="Pictures/Issues.jpg" alt="alt text"></p>
+<ul>
+<li>Besides this changes to the way a player connects to the network were made. Now instead of joining a random room all the players join to the same room. There are max 10 players that can join right now. In case of disconnect the client will be prompted to the first screen and will have to connect again, if he does not have internet access then he will always come to the first screen.<br>
+The LevelSelection Scene has to be the first one and the main room the second one.</li>
+</ul>
+<p><img src="Pictures/ExtraScene.jpg" alt="alt text"></p>
+<h2 class="mume-header" id="fixed-some-issues">Fixed some issues</h2>
+
+<ul>
+<li>fixed the issue with the teleportation angle in the beggining of the project</li>
+<li>If you want the raycast to ignore the targets like the machine it has to have the IgnoreRaycastLayer</li>
+<li>Changed the photon settings of the project to work on asia</li>
+<li>Added a pole to hold the change color button (other than this nothing changed regarding the color button)</li>
+</ul>
+<p><img src="Pictures/ColorButtonUpdate.jpg" alt="alt text"></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
